@@ -5,8 +5,9 @@ class Hash
     # code goes here
     key_matches = self.each do |key, value|
       value.include?(arguments) ? key : false
-      binding.pry
     end
+    binding.pry
     key_matches
   end
 end
+  
