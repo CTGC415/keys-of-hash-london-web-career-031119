@@ -1,7 +1,7 @@
 class Hash
-  def keys_of(arguments)
+  def keys_of(arguments, *stuff)
     # code goes here
-    key_matches = hash.each do |key, value|
+    key_matches = stuff.each do |key, value|
       arguments.include?(value) ? key : false
     end
   end
