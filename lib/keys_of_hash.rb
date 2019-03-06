@@ -1,8 +1,8 @@
 class Hash
-  def keys_of(arguments, *stuff)
+  def keys_of(arguments, *inputs)
     # code goes here
-    key_matches = stuff.each do |key, value|
-      arguments.include?(value) ? key : false
+    key_matches = inputs.each do |key, value|
+      inputs.include?(arguments) ? key : false
     end
   end
 end
