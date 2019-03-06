@@ -7,5 +7,6 @@ class Hash
       value.include?(arguments) ? key : nil
     end
     key_matches
+    binding.pry
   end
 end
