@@ -3,12 +3,10 @@ require 'pry'
 class Hash
   def keys_of(arguments)
     # code goes here
-    key_matches = self.collect do |key, value|
-      if value.include?(arguments)
-        key
-      end
+    key_matches = []
+    self.eacha do |key, value|
+      value.include?(arguments) ? key_matches << key : nil
     end
     key_matches
-    binding.pry
   end
 end
