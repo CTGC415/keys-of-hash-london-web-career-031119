@@ -1,11 +1,11 @@
 require 'pry'
 
 class Hash
-  def keys_of(arguments, *inputs)
+  def keys_of(*arguments)
     # code goes here
-    key_matches = inputs.each do |key, value|
+    key_matches = .each do |key, value|
       binding.pry
-      inputs.include?(arguments) ? key : false
+      .include?(arguments) ? key : false
     end
   end
 end
