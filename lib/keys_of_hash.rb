@@ -4,9 +4,10 @@ class Hash
   def keys_of(arguments)
     # code goes here
     key_matches = self.collect do |key, value|
-      value.include?(arguments) ? key : nil
+      if value.include?(arguments)
+        key
+      end
     end
     key_matches
-    binding.pry
   end
 end
