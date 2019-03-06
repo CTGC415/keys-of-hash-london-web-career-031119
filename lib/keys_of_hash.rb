@@ -9,5 +9,6 @@ class Hash
       end
     end
     key_matches
+    partition { ||  }
   end
 end
