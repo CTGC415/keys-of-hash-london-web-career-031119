@@ -6,7 +6,6 @@ class Hash
     key_matches = self.collect do |key, value|
       value.include?(arguments) ? key : false
     end
-    binding.pry
     key_matches
   end
 end
