@@ -5,7 +5,7 @@ class Hash
     # code goes here
     key_matches = []
     self.each do |key, value|
-      arguments.any? {value} ? key_matches << key : nil
+      arguments.any? { |arg| arg == value} ? key_matches << key : nil
       binding.pry
     end
     key_matches
